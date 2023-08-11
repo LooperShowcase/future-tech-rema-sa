@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>MY AI</title>
+</head>
+<body>
+<h1>MY AI</h1>  
+<p>REMA SALEM</p>
+<button onclick="speak();">init audio </button>
+
+<div class="container">
+
+  <form 
+    onsubmit="
+    event.preventDefault();
+    conversationUserAdd(document.getElementById('input-text').value);
+    openai_test();
+    ">
+  <input tape="text" id="input-text" placeholder="say something....">
+  <button id="submit-button">submit</button>
+  </form>
+
+  <div id="chat-container"></div>
+
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
